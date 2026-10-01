@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PEYKAN TEA — هر جرعه، یک ایده خفن‌تر.">
+<title>PEYKAN TEA × MOHAMMADREZAPY</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--bg:#080909;--card:#101211;--soft:#161917;--text:#f7f3ea;--muted:#aaa69d;--gold:#e5a33a;--gold2:#ffc45e;--line:rgba(255,255,255,.11);--green:#738b5a}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Vazirmatn,Tahoma,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}button{font:inherit}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);position:fixed;top:0;left:0;right:0;z-index:100}
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 30px));height:66px;border:1px solid var(--line);background:rgba(8,9,9,.72);backdrop-filter:blur(18px);border-radius:18px;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:0 18px}
+.brand{font-family:"Space Grotesk";font-size:1.3rem;font-weight:700;letter-spacing:-.06em}.brand span{display:block;font-family:Vazirmatn;font-size:.48rem;letter-spacing:.4em;color:var(--gold);text-align:center;margin-top:-3px}
+.links{display:flex;gap:28px;color:#d4d0c8;font-size:.9rem}.links a{position:relative}.links a:after{content:"";position:absolute;bottom:-9px;right:0;width:0;height:2px;background:var(--gold);transition:.3s}.links a:hover:after{width:100%}
+.actions{display:flex;gap:8px}.round{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;display:grid;place-items:center}.cart-count{position:absolute;background:var(--gold);color:#111;width:18px;height:18px;border-radius:50%;font-size:.65rem;display:grid;place-items:center;margin:-27px 0 0 27px;font-weight:800}
+.hero{min-height:100vh;position:relative;display:grid;align-items:center;overflow:hidden;padding:135px 0 70px}.hero-bg{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(8,9,9,.97) 0%,rgba(8,9,9,.82) 40%,rgba(8,9,9,.2) 100%),url("peykan-hero.png");background-size:cover;background-position:center;filter:saturate(.95);transform:scale(1.03)}
+.container{width:min(1180px,calc(100% - 34px));margin:auto;position:relative;z-index:2}.hero-content{max-width:650px}.eyebrow{color:var(--gold);font-size:.8rem;letter-spacing:.24em;font-weight:700;margin-bottom:18px}.hero h1{font-family:"Space Grotesk";font-size:clamp(4rem,10vw,9rem);line-height:.78;letter-spacing:-.08em}.hero h1 span{color:var(--gold)}.hero h2{font-size:clamp(1.5rem,3vw,2.4rem);margin:30px 0 14px}.hero p{color:#d0cbc0;line-height:2;max-width:580px}.cta-row{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:15px 23px;cursor:pointer;font-weight:800}.primary{background:var(--gold);color:#111;box-shadow:0 15px 45px rgba(229,163,58,.2)}.ghost{background:rgba(255,255,255,.06);border:1px solid var(--line);color:var(--text)}
+.hero-badge{position:absolute;left:4%;bottom:9%;border:1px solid var(--line);padding:15px 20px;border-radius:14px;background:rgba(8,9,9,.45);backdrop-filter:blur(10px);color:#ddd;font-size:.8rem}.hero-badge b{color:var(--gold)}
+.features{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#0c0e0d}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr)}.feature{padding:32px 22px;text-align:center;border-left:1px solid var(--line)}.feature:last-child{border-left:0}.feature-icon{font-size:1.8rem;color:var(--gold);margin-bottom:10px}.feature b{display:block}.feature small{color:var(--muted)}
+.section{padding:115px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 55px}.section-head .eyebrow{margin-bottom:10px}.section-head h2{font-size:clamp(2.3rem,5vw,4.3rem);line-height:1.05}.section-head p{color:var(--muted);margin-top:14px;line-height:1.9}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:linear-gradient(145deg,#141716,#0e100f);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s}.product:hover{transform:translateY(-8px);border-color:rgba(229,163,58,.55);box-shadow:0 25px 70px rgba(0,0,0,.32)}.product-art{height:250px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,#30422c,#0c0f0d 65%);display:grid;place-items:center}.product-art:after{content:"";width:130px;height:170px;border-radius:14px 14px 24px 24px;background:linear-gradient(90deg,#0a0b0b,#252826,#090a0a);box-shadow:0 25px 50px #000;position:absolute}.product-art .can{z-index:2;text-align:center;font-family:"Space Grotesk";font-weight:700;line-height:1;color:var(--gold);font-size:1.1rem;position:relative}.product-art .can small{display:block;font-family:Vazirmatn;font-size:.5rem;letter-spacing:.28em;margin-top:5px}.product:nth-child(2) .product-art{background:radial-gradient(circle,#284532,#0a0d0b 68%)}.product:nth-child(3) .product-art{background:radial-gradient(circle,#34335d,#0a0a0f 68%)}.product:nth-child(4) .product-art{background:radial-gradient(circle,#5c3b18,#0d0b09 68%)}.tag{position:absolute;top:13px;right:13px;background:var(--gold);color:#111;border-radius:20px;padding:5px 10px;font-size:.7rem;font-weight:800;z-index:4}.product-body{padding:21px}.product h3{font-size:1.05rem}.product p{color:var(--muted);font-size:.82rem;line-height:1.8;margin:8px 0 17px;min-height:45px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{color:var(--gold2);font-weight:800}.add{border:0;background:var(--gold);color:#111;border-radius:9px;padding:10px 13px;font-weight:800;cursor:pointer}.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-card{border:1px solid var(--line);background:linear-gradient(135deg,#131615,#0c0e0d);border-radius:24px;padding:42px}.about-card h3{font-size:clamp(2rem,4vw,3.8rem);line-height:1.1}.about-card p{color:var(--muted);line-height:2;margin-top:20px}.quote{border-right:3px solid var(--gold);padding-right:18px;margin-top:28px;color:#ddd}.desk{min-height:480px;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:url("peykan-hero.png") center/cover;box-shadow:0 30px 100px rgba(0,0,0,.35)}
+.newsletter{border:1px solid var(--line);border-radius:24px;padding:55px;background:linear-gradient(110deg,#171a17,#0d0f0e);display:flex;justify-content:space-between;align-items:center;gap:30px}.newsletter h3{font-size:2rem}.newsletter p{color:var(--muted);margin-top:8px}.mail{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:min(100%,430px)}.mail input{flex:1;background:transparent;border:0;outline:0;color:white;padding:15px}.mail button{border:0;background:var(--gold);padding:0 18px;font-weight:800}
+footer{padding:45px 0 30px;border-top:1px solid var(--line);margin-top:50px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:end;color:var(--muted);font-size:.8rem}.sign{font-family:"Space Grotesk";font-size:1.3rem;color:var(--text);font-weight:700}.nova-sign{color:var(--gold);margin-top:5px}
+.cart-panel{position:fixed;inset:0;z-index:200;pointer-events:none}.shade{position:absolute;inset:0;background:rgba(0,0,0,.62);opacity:0;transition:.3s}.drawer{position:absolute;top:0;left:0;height:100%;width:min(420px,92vw);background:#101211;border-right:1px solid var(--line);padding:28px;transform:translateX(-100%);transition:.4s;overflow:auto}.cart-panel.open{pointer-events:auto}.cart-panel.open .shade{opacity:1}.cart-panel.open .drawer{transform:none}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer-items{padding:20px 0}.cart-item{display:flex;justify-content:space-between;gap:10px;padding:15px 0;border-bottom:1px solid var(--line)}.cart-item small{color:var(--muted);display:block;margin-top:4px}.remove{border:0;background:none;color:#e78d76;cursor:pointer}.total{display:flex;justify-content:space-between;font-weight:800;font-size:1.1rem;padding:20px 0}.checkout{width:100%}.empty{color:var(--muted);text-align:center;padding:45px 0}
+.reveal{opacity:0;transform:translateY(28px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none}.feature-grid{grid-template-columns:1fr 1fr}.feature:nth-child(2){border-left:0}.products{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.newsletter{display:block}.mail{margin-top:25px}.hero-badge{display:none}}
+@media(max-width:560px){.nav{top:10px}.hero{padding-top:120px}.hero-bg{background-position:58% center}.hero h1{font-size:4rem}.feature-grid,.products{grid-template-columns:1fr}.feature{border-left:0;border-bottom:1px solid var(--line)}.feature:last-child{border-bottom:0}.product-art{height:280px}.section{padding:80px 0}.about-card{padding:28px}.desk{min-height:330px}.newsletter{padding:30px}.foot{flex-direction:column;align-items:flex-start}}
+
+.detail-link{display:block;text-align:center;color:#c9b17c;font-size:.76rem;margin-top:13px}.detail-link:hover{color:var(--gold2)}
+.product-art{background-image:linear-gradient(#0003,#0008),url("peykan-hero.png");background-size:cover;background-position:35% 65%}.product:nth-child(2) .product-art{background-image:linear-gradient(#0003,#0008),url("peykan-hero.png");background-position:44% 66%}.product:nth-child(3) .product-art{background-image:linear-gradient(#0003,#0008),url("peykan-hero.png");background-position:56% 72%;filter:saturate(.8)}.product:nth-child(4) .product-art{background-image:linear-gradient(#0003,#0008),url("peykan-hero.png");background-position:30% 61%}
+.product-art:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at center,transparent 0,rgba(0,0,0,.28) 100%);pointer-events:none}
+.lang-en{font-family:Arial,sans-serif}
+.checkout-modal{position:fixed;inset:0;z-index:350;display:none;place-items:center;padding:18px;background:#000b;backdrop-filter:blur(8px)}.checkout-modal.open{display:grid}.checkout-card{width:min(470px,100%);background:#101211;border:1px solid #806322;border-radius:20px;padding:27px;position:relative}.checkout-card input{width:100%;padding:12px;margin:7px 0 13px;background:#090b09;border:1px solid var(--line);border-radius:9px;color:white}.checkout-card label{display:block;color:#ddd;font-size:.82rem}.checkout-card p{color:var(--muted);line-height:1.8}.checkout-card .btn{width:100%}.checkout-result{display:none;margin-top:14px;padding:13px;border:1px solid #536b46;border-radius:10px;background:#152014;line-height:1.8}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+
+<nav class="nav">
+  <a href="#" class="brand">PEYKAN<span>TEA</span></a>
+  <div class="links">
+    <a href="#home">خانه</a><a href="#products">محصولات</a><a href="#story">درباره PEYKAN</a><a href="#contact">تماس با ما</a>
+  </div>
+  <div class="actions"><button class="round" id="langToggle" title="Switch language" style="width:auto;padding:0 11px;border-radius:12px;font-size:.75rem;color:var(--gold)">EN</button>
+    <button class="round" id="searchBtn">⌕</button>
+    <button class="round" id="cartBtn" aria-label="cart">🛒<i class="cart-count" id="count">0</i></button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-content reveal">
+      <div class="eyebrow">MORE THAN JUST TEA</div>
+      <h1>PEYKAN <span>TEA</span></h1>
+      <h2>هر جرعه، یک ایده خفن‌تر.</h2>
+      <p>چای PEYKAN برای لحظه‌هایی که باید تمرکز کنی، بسازی، یاد بگیری و ایده‌ای که توی سرت داری رو واقعی کنی.</p>
+      <div class="cta-row"><a class="btn primary" href="#products">مشاهده محصولات ↙</a><a class="btn ghost" href="#story">داستان PEYKAN</a></div>
+    </div>
+  </div>
+  <div class="hero-badge"><b>MOHAMMADREZAPY</b><br>CODE · GYM · TEA · CREATE</div>
+</header>
+
+<section class="features">
+<div class="container feature-grid">
+  <div class="feature"><div class="feature-icon">◈</div><b>طعم طبیعی و خالص</b><small>بدون افزودنی‌های اضافه</small></div>
+  <div class="feature"><div class="feature-icon">ϟ</div><b>تمرکز و انرژی</b><small>برای کار و یادگیری</small></div>
+  <div class="feature"><div class="feature-icon">♧</div><b>تجربه متفاوت</b><small>هر فنجان یک حال خوب</small></div>
+  <div class="feature"><div class="feature-icon">♡</div><b>ساخته‌شده با عشق</b><small>از ایده تا فنجان</small></div>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="container">
+  <div class="section-head reveal"><div class="eyebrow">OUR PRODUCTS</div><h2>محصولات پرطرفدار <span style="color:var(--gold)">PEYKAN</span></h2><p>چهار انتخاب برای چهار مود متفاوت؛ از کدنویسی روزانه تا شب‌های طولانی.</p></div>
+  <div class="products">
+    <article class="product reveal" data-name="PEYKAN Classic" data-price="169000"><div class="product-art"><span class="tag">محبوب</span><div class="can">PEYKAN<small>CLASSIC BLEND</small></div></div><div class="product-body"><h3>PEYKAN Classic</h3><p>چای کلاسیک؛ مناسب برای کدنویسی شبانه.</p><div class="price-row"><span class="price">۱۶۹,۰۰۰ تومان</span><button class="add">افزودن 🛒</button><a href="#" class="detail-link" data-detail>مشاهده جزئیات ↗</a></div></div></article>
+    <article class="product reveal" data-name="PEYKAN Boost" data-price="189000"><div class="product-art"><span class="tag">جدید</span><div class="can">PEYKAN<small>BOOST BLEND</small></div></div><div class="product-body"><h3>PEYKAN Boost</h3><p>انرژی بیشتر، تمرکز بالاتر؛ برای پروژه‌های پرکار.</p><div class="price-row"><span class="price">۱۸۹,۰۰۰ تومان</span><button class="add">افزودن 🛒</button><a href="#" class="detail-link" data-detail>مشاهده جزئیات ↗</a></div></div></article>
+    <article class="product reveal" data-name="PEYKAN Night" data-price="179000"><div class="product-art"><div class="can">PEYKAN<small>NIGHT BLEND</small></div></div><div class="product-body"><h3>PEYKAN Night</h3><p>مخصوص ساعت‌های آخر شب و ایده‌های تازه.</p><div class="price-row"><span class="price">۱۷۹,۰۰۰ تومان</span><button class="add">افزودن 🛒</button><a href="#" class="detail-link" data-detail>مشاهده جزئیات ↗</a></div></div></article>
+    <article class="product reveal" data-name="PEYKAN Sultan Edition" data-price="299000"><div class="product-art"><span class="tag">LIMITED</span><div class="can">PEYKAN<small>SULTAN EDITION</small></div></div><div class="product-body"><h3>PEYKAN Sultan Edition</h3><p>ویژه‌ی خاص‌ها؛ برای ایده‌های خاص‌تر!</p><div class="price-row"><span class="price">۲۹۹,۰۰۰ تومان</span><button class="add">افزودن 🛒</button><a href="#" class="detail-link" data-detail>مشاهده جزئیات ↗</a></div></div></article>
+  </div>
+</div>
+</section>
+
+<section class="section" id="story">
+<div class="container about">
+  <div class="desk reveal"></div>
+  <div class="about-card reveal">
+    <div class="eyebrow">THE PEYKAN STORY</div>
+    <h3>چای برای من فقط چای نیست.</h3>
+    <p>PEYKAN از یک ایده ساده شروع شد: وقتی داری چیزی می‌سازی، گاهی فقط یک فنجان چای لازم داری تا دوباره تمرکزت رو پیدا کنی.</p>
+    <div class="quote">«یه جرعه، یه نفس، بعد دوباره برگرد سر کدت.» ☕</div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+  <div class="newsletter reveal">
+    <div><div class="eyebrow">PEYKAN LETTER</div><h3>برای ایده‌های بعدی آماده‌ای؟</h3><p>ایمیل بزن؛ خبر محصولات جدید و تخفیف‌ها رو از دست نده.</p></div>
+    <form class="mail" onsubmit="event.preventDefault(); alert('ثبت شد؛ خوش اومدی به PEYKAN ☕');"><input type="email" placeholder="ایمیل تو..." required><button>عضویت ↗</button></form>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="container foot">
+  <div><div class="sign">𝓜𝓸𝓱𝓪𝓶𝓶𝓪𝓭𝓻𝓮𝔃𝓪𝓹𝔂</div><div class="nova-sign">✦ Crafted with PEYKAN</div></div>
+  <div>© 2026 PEYKAN TEA · یک فنجان، یک ایده.</div>
+</div>
+</footer>
+
+<div class="cart-panel" id="panel">
+  <div class="shade" id="shade"></div>
+  <aside class="drawer">
+    <div class="drawer-head"><h3>سبد PEYKAN 🛒</h3><button class="round" id="close">×</button></div>
+    <div class="drawer-items" id="items"><div class="empty">هنوز چیزی به سبد اضافه نکردی ☕</div></div>
+    <div class="total"><span>جمع کل</span><span id="total">۰ تومان</span></div>
+    <button class="btn primary checkout" id="checkoutOpen">ادامه و پرداخت ↗</button>
+  </aside>
+</div>
+
+<script>
+const panel=document.getElementById('panel'), itemsEl=document.getElementById('items'), countEl=document.getElementById('count'), totalEl=document.getElementById('total');
+let cart=[];
+const fa=n=>new Intl.NumberFormat('fa-IR').format(n);
+function renderCart(){
+ countEl.textContent=cart.reduce((s,x)=>s+x.qty,0);
+ if(!cart.length){itemsEl.innerHTML='<div class="empty">هنوز چیزی به سبد اضافه نکردی ☕</div>';totalEl.textContent='۰ تومان';return}
+ itemsEl.innerHTML=cart.map((x,i)=>`<div class="cart-item"><div><b>${x.name}</b><small>${fa(x.price)} تومان × ${x.qty}</small></div><button class="remove" onclick="removeItem(${i})">حذف</button></div>`).join('');
+ totalEl.textContent=fa(cart.reduce((s,x)=>s+x.price*x.qty,0))+' تومان';
+}
+function removeItem(i){cart.splice(i,1);renderCart()}
+document.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>{
+ const p=btn.closest('.product'), name=p.dataset.name, price=+p.dataset.price, found=cart.find(x=>x.name===name);
+ if(found) found.qty++; else cart.push({name,price,qty:1}); renderCart(); panel.classList.add('open');
+}));
+document.getElementById('cartBtn').onclick=()=>panel.classList.add('open');
+document.getElementById('close').onclick=()=>panel.classList.remove('open');
+document.getElementById('shade').onclick=()=>panel.classList.remove('open');
+document.getElementById('searchBtn').onclick=()=>{document.getElementById('products').scrollIntoView({behavior:'smooth'});};
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+
+<div class="checkout-modal" id="checkoutModal"><div class="checkout-card"><button class="round" id="checkoutClose" style="float:left">×</button><div class="eyebrow">PRACTICE CHECKOUT</div><h2 id="checkoutTitle">پرداخت آزمایشی</h2><p id="checkoutNote">این پرداخت فقط برای تمرین است؛ هیچ مبلغ واقعی کسر نمی‌شود.</p><div class="total"><span id="orderAmountLabel">مبلغ سفارش</span><b id="checkoutAmount">۰ تومان</b></div><form id="checkoutForm"><label id="nameLabel">نام و نام خانوادگی<input id="customerName" required placeholder="نام شما"></label><label id="emailLabel">ایمیل<input type="email" id="customerEmail" required placeholder="you@example.com"></label><button class="btn primary" type="submit" id="payDemo">تأیید سفارش آزمایشی ✓</button></form><div class="checkout-result" id="checkoutResult"></div></div></div>
+<script>
+const i18n={fa:{nav:['خانه','محصولات','درباره PEYKAN','تماس با ما'],eyebrow:'MORE THAN JUST TEA',hero:'هر جرعه، یک ایده خفن‌تر.',intro:'چای PEYKAN برای لحظه‌هایی که باید تمرکز کنی، بسازی، یاد بگیری و ایده‌هایت را واقعی کنی.',shop:'مشاهده محصولات ↙',storyBtn:'داستان PEYKAN',products:'محصولات پرطرفدار PEYKAN',productIntro:'چهار انتخاب برای چهار مود متفاوت؛ از کدنویسی روزانه تا شب‌های طولانی.',storyTitle:'چای برای من فقط چای نیست.',storyText:'PEYKAN از یک ایده ساده شروع شد: وقتی داری چیزی می‌سازی، گاهی فقط یک فنجان چای لازم داری تا دوباره تمرکزت را پیدا کنی.',contact:'برای ایده‌های بعدی آماده‌ای؟',contactText:'ایمیل بزن؛ خبر محصولات جدید و تخفیف‌ها را از دست نده.',cart:'سبد PEYKAN 🛒',empty:'هنوز چیزی به سبد اضافه نکردی ☕',total:'جمع کل',checkout:'ادامه و پرداخت ↗',payTitle:'پرداخت آزمایشی',payNote:'این پرداخت فقط برای تمرین است؛ هیچ مبلغ واقعی کسر نمی‌شود.',amount:'مبلغ سفارش',name:'نام و نام خانوادگی',email:'ایمیل',confirm:'تأیید سفارش آزمایشی ✓',added:'افزودن 🛒',details:'مشاهده جزئیات ↗',crafted:'✦ Crafted with PEYKAN',footer:'© 2026 PEYKAN TEA · هر جرعه، یک ایده خفن‌تر.',success:'✅ سفارش آزمایشی ثبت شد!',nocharge:'هیچ مبلغ واقعی کسر نشده است.',order:'شماره سفارش',thanks:'ثبت شد؛ خوش آمدی به PEYKAN ☕'},en:{nav:['Home','Products','Our Story','Contact'],eyebrow:'MORE THAN JUST TEA',hero:'Every sip, a sharper idea.',intro:'PEYKAN TEA is made for moments when you focus, build, learn, and turn ideas into something real.',shop:'Explore products ↙',storyBtn:'Our story',products:'PEYKAN favourites',productIntro:'Four blends for four moods, from everyday work to late-night ideas.',storyTitle:'Tea is more than just tea.',storyText:'PEYKAN began with a simple idea: when you are building something, sometimes a cup of tea helps you find your focus again.',contact:'Ready for your next idea?',contactText:'Join us for news about new blends and special offers.',cart:'Your PEYKAN cart 🛒',empty:'Your cart is empty for now ☕',total:'Total',checkout:'Continue to checkout ↗',payTitle:'Practice checkout',payNote:'This is a practice payment. No real money will be charged.',amount:'Order total',name:'Full name',email:'Email',confirm:'Confirm demo order ✓',added:'Add to cart 🛒',details:'View details ↗',crafted:'✦ Crafted with PEYKAN',footer:'© 2026 PEYKAN TEA · Every sip, a sharper idea.',success:'✅ Demo order placed!',nocharge:'No real payment was taken.',order:'Order number',thanks:'Subscribed — welcome to PEYKAN ☕'}};let currentLang='fa';function setLang(l){currentLang=l;document.documentElement.lang=l;document.documentElement.dir=l==='fa'?'rtl':'ltr';document.body.classList.toggle('lang-en',l==='en');const d=i18n[l];document.querySelector('#langToggle').textContent=l==='fa'?'EN':'فارسی';document.querySelectorAll('.links a').forEach((a,i)=>a.textContent=d.nav[i]||a.textContent);const set=(sel,txt)=>{let e=document.querySelector(sel);if(e)e.textContent=txt};set('.eyebrow',d.eyebrow);set('.hero h2',d.hero);set('.hero p',d.intro);set('.cta-row .primary',d.shop);set('.cta-row .ghost',d.storyBtn);set('#products .section-head h2',d.products);set('#products .section-head p',d.productIntro);set('#story .about-card h3',d.storyTitle);set('#story .about-card p',d.storyText);set('#story .quote',l==='fa'?'«یه جرعه، یه نفس، بعد دوباره برگرد سر کدت.» ☕':'“Take a sip, take a breath, then get back to it.” ☕');const prodNames=l==='fa'?['PEYKAN Classic','PEYKAN Boost','PEYKAN Night','PEYKAN Sultan Edition']:['PEYKAN Classic','PEYKAN Boost','PEYKAN Night','PEYKAN Sultan Edition'];const prodDesc=l==='fa'?['چای کلاسیک؛ مناسب برای کدنویسی شبانه.','انرژی بیشتر، تمرکز بالاتر؛ برای پروژه‌های پرکار.','مخصوص ساعت‌های آخر شب و ایده‌های تازه.','ویژه‌ی خاص‌ها؛ برای ایده‌های خاص‌تر!']:['Classic tea for everyday rituals and late-night coding.','A signature blend for focused work sessions.','For quiet evenings and fresh ideas.','A premium limited edition for special moments.'];document.querySelectorAll('.product').forEach((p,i)=>{p.querySelector('h3').textContent=prodNames[i];p.querySelector('p').textContent=prodDesc[i]});set('#contact .newsletter h3',d.contact);set('#contact .newsletter p',d.contactText);set('.drawer-head h3',d.cart);set('.empty',d.empty);set('.total span',d.total);set('#checkoutOpen',d.checkout);set('#checkoutTitle',d.payTitle);set('#checkoutNote',d.payNote);set('#orderAmountLabel',d.amount);set('#nameLabel',d.name);set('#emailLabel',d.email);set('#payDemo',d.confirm);set('.nova-sign',d.crafted);set('footer .foot div:last-child',d.footer);document.querySelectorAll('.add').forEach(b=>b.textContent=d.added);document.querySelectorAll('.detail-link').forEach(b=>b.textContent=d.details);document.querySelector('#customerName').placeholder=l==='fa'?'نام شما':'Your name';document.querySelector('#customerEmail').placeholder='you@example.com';if(l==='en'){document.querySelector('.hero h1').style.letterSpacing='-.07em'}renderCart()}document.querySelector('#langToggle').addEventListener('click',()=>setLang(currentLang==='fa'?'en':'fa'));document.querySelectorAll('[data-detail]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const p=a.closest('.product');alert((currentLang==='fa'?'جزئیات محصول: ':'Product details: ')+p.querySelector('h3').textContent+' — '+p.querySelector('p').textContent)}));const oldRender=renderCart;renderCart=function(){oldRender();const amount=document.querySelector('#total').textContent;document.querySelector('#checkoutAmount').textContent=amount};document.querySelector('#checkoutOpen').addEventListener('click',()=>{if(!cart.length){alert(i18n[currentLang].empty);return}document.querySelector('#checkoutModal').classList.add('open');document.querySelector('#checkoutResult').style.display='none'});document.querySelector('#checkoutClose').onclick=()=>document.querySelector('#checkoutModal').classList.remove('open');document.querySelector('#checkoutForm').addEventListener('submit',e=>{e.preventDefault();const id='PT-'+Date.now().toString().slice(-8);const r=document.querySelector('#checkoutResult');r.style.display='block';r.innerHTML=i18n[currentLang].success+'<br>'+i18n[currentLang].order+': <b>'+id+'</b><br>'+i18n[currentLang].nocharge;cart=[];renderCart()});setLang('fa');</script>\n</body>
+</html>
